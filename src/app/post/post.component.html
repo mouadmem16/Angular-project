@@ -1,0 +1,7 @@
+<li class="list-group-item col-6" [ngClass]="{'list-group-item col-6':true, 'list-group-item-success':estVerte(), 'list-group-item-danger':estRouge()}">
+  <h5>{{title}} </h5>
+  <span>{{ createdAt | date:'short' }}</span>
+  <p>{{ content }}</p>
+  <button class="btn btn-success btn-sm" (click)="Loveit()">Love It</button>
+  <button class="btn btn-danger btn-sm mx-2" (click)="DontLoveit()">Don't love It</button>
+</li>
